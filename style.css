@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+body {
+  background-color: rgba(100, 96, 96, 0.521);
+}
+h1 {
+  color: rgba(56, 56, 56, 0.966);
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1%;
+  font-weight: bold;
+}
+
+/* Image Container */
+.container {
+  width: 100%;
+  text-align: center;
+}
+.bg {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Background Image  --> Adjusted Height */
+.bg-img {
+  position: absolute;
+  z-index: -1;
+  height: 500px;
+  border-radius: 1%;
+}
+.fu {
+  text-align: center;
+  z-index: 4;
+  width: 3.3%;
+}
+
+canvas {
+  z-index: 5;
+}
+
+/* Action Buttons */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin: 1% 15%;
+}
+
+.btn {
+  background-color: rgba(87, 87, 87, 0.904);
+  color: white;
+  margin: 0;
+}
+
+.btn:hover {
+  background: white;
+  border: 2px solid rgba(87, 87, 87, 0.904);
+  transform: scale(0.15%);
+}
+
+/* Audio Control */
+.bg-music {
+  position: absolute;
+  top: 5%;
+  left: 3%;
+}
+
+/* Footer */
+section {
+  background-color: rgb(121, 120, 120);
+  color: white;
+  text-align: center;
+}
+#footer {
+  margin: 1% 0;
+}
+.fab {
+  color: black;
+  margin: 0 0.3%;
+}
+.fab:hover {
+  color: white;
+}
