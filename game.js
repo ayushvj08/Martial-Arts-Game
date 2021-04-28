@@ -73,10 +73,10 @@ let animate = (ctx, images, animation, callback) =>{
 
             ctx.clearRect(x, 100, 350, 350);
             ctx.drawImage(image, x, 100, 350, 350);
-         }, index * 70 );
+         }, index * 90 );
          
    });
-   setTimeout(callback, images[animation].length * 70);
+   setTimeout(callback, images[animation].length * 90);
 }
 
 loadImages( (images) => {
