@@ -22,7 +22,7 @@ h1 {
 }
 
 /*  Container */
-.container {
+.ctr {
   width: 100%;
   text-align: center;
 }
@@ -91,6 +91,12 @@ footer {
 /* Media Query */
 
 @media (max-width: 1200px) {
+  .head {
+    padding: 0 1%;
+  }
+  h1 {
+    font-size: 1.9rem;
+  }
   .bg-img {
     width: 80%;
   }

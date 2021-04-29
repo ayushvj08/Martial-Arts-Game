@@ -58,7 +58,7 @@ let animate = (ctx, images, animation, callback) =>{
 
          // Move Forward
             if (image.src.includes("forward")) {
-               if (x + 576)
+               if (x < 576)
                   x += 6;
                ctx.clearRect(x, 100, 350, 350);
                ctx.drawImage(image, x, 100, 350, 350);
