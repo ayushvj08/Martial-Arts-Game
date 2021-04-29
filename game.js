@@ -49,7 +49,7 @@ let loadImages = (callback) => {
    })
 };
 
-var x = 40 ;
+var x = 0 ;
 
 let animate = (ctx, images, animation, callback) =>{
 
@@ -58,15 +58,15 @@ let animate = (ctx, images, animation, callback) =>{
 
          // Move Forward
             if (image.src.includes("forward")) {
-               if (x + c.width < innerWidth)
-                  x += 5;
+               if (x + 576)
+                  x += 6;
                ctx.clearRect(x, 100, 350, 350);
                ctx.drawImage(image, x, 100, 350, 350);
             }
          // Move Backwards
             else if (image.src.includes("backward")) {
                if (x > 0)
-                  x -= 5;
+                  x -= 6;
                ctx.clearRect(x, 100, 350, 350);
                ctx.drawImage(image, x, 100, 350, 350);
             }

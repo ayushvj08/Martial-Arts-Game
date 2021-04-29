@@ -15,8 +15,13 @@ h1 {
   margin-top: 1%;
   font-weight: bold;
 }
+.fu {
+  text-align: center;
+  z-index: 4;
+  width: 3.3%;
+}
 
-/* Image Container */
+/*  Container */
 .container {
   width: 100%;
   text-align: center;
@@ -27,40 +32,34 @@ h1 {
   justify-content: center;
 }
 
-/* Background Image  --> Adjusted Height */
+/* Background Image  --> Adjusted width of absolute image */
 .bg-img {
   position: absolute;
   z-index: -1;
-  height: 500px;
+  width: 55%;
   border-radius: 1%;
-}
-.fu {
-  text-align: center;
-  z-index: 4;
-  width: 3.3%;
 }
 
 canvas {
   z-index: 5;
 }
 
-/* Action Buttons */
-.actions {
-  display: flex;
-  justify-content: space-between;
-  margin: 1% 15%;
+/* Animations Buttons */
+.animation-buttons {
+  text-align: center;
+  justify-content: space-around;
 }
 
 .btn {
   background-color: rgba(87, 87, 87, 0.904);
   color: white;
-  margin: 0;
+  margin: 1% 2.5%;
 }
 
 .btn:hover {
   background: white;
   border: 2px solid rgba(87, 87, 87, 0.904);
-  transform: scale(0.15%);
+  transform: scale(1.5%);
 }
 
 /* Audio Control */
@@ -71,18 +70,45 @@ canvas {
 }
 
 /* Footer */
-section {
-  background-color: rgb(121, 120, 120);
+footer {
+  background-color: rgb(121, 121, 121);
   color: white;
   text-align: center;
+  padding-top: 1%;
 }
-#footer {
-  margin: 1% 0;
+#content {
+  font-style: normal;
 }
 .fab {
   color: black;
   margin: 0 0.3%;
+  padding-bottom: 1%;
 }
 .fab:hover {
   color: white;
+}
+
+/* Media Query */
+
+@media (max-width: 1200px) {
+  .bg-img {
+    width: 80%;
+  }
+  canvas {
+    width: 80%;
+    height: 70%;
+  }
+  .fu {
+    width: 5%;
+  }
+  .bg-music {
+    left: 1%;
+  }
+  footer {
+    margin-top: 5%;
+  }
+  .fab {
+    margin: 0 1%;
+    padding-bottom: 3%;
+  }
 }
