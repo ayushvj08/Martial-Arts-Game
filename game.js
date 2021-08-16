@@ -8,13 +8,13 @@ let loadImage = (src, callback) => {
 }
 
 let setImagePath = (frameNumber, animation) => {
-   return "/images/" + animation + "/" + frameNumber + ".png";
+   return "./images/" + animation + "/" + frameNumber + ".png";
 };
 
 // Play Sounds
 
 let playSounds = (path) => {
-   let sound = "/sounds/" + path + ".mp3";
+   let sound = "./sounds/" + path + ".mp3";
    var audio = new Audio(sound);
    audio.play();
 }
